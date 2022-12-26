@@ -48,7 +48,7 @@ class feature_Dataset(Dataset):
         
 
 # load data for num-indicator
-def CIFAR10_indicator_dataset(dataset, num, args):
+def indicator_dataset(dataset, num, args):
     print("Loading full CIFAR10 dataset...")
     data_train = CIFAR10(root='./data', train=True, download=True, transform=transform)
     data_test = CIFAR10(root='./data', train=False, download=True, transform=transform)
